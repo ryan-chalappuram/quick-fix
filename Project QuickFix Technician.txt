@@ -1,0 +1,51 @@
+Project: QuickFix – Technician Booking & Dispatch Portal 
+This project simulates a real-world platform where customers can request home services (like electricians, plumbers, or appliance repair), and technicians and admins manage bookings and workflows from their respective dashboards. 
+It’s a great opportunity to strengthen your skills across React, FastAPI/Django, PostgreSQL, Docker, CI/CD, and deployment, while working on a meaningful and structured real-world use case. 
+What You’ll Build 
+1. Customer Interface (React or Next.js) 
+
+    Sign up / Login 
+    Book a service: Choose service type, preferred date/time, add address and problem description 
+    View, cancel, or reschedule existing bookings 
+    Track booking status (Pending → Accepted → In Progress → Completed) 
+
+2. Technician Dashboard 
+
+    Login to view assigned bookings 
+    Accept/reject requests 
+    Update booking status (In progress / Completed) 
+    View weekly schedule 
+
+3. Admin Panel 
+
+    View all incoming service requests 
+    Assign technicians manually (or build a basic auto-assign logic) 
+    Monitor job load per technician 
+    Dashboard view for analytics (no. of requests, pending jobs, completion rate) 
+
+ 
+Backend API 
+
+    Build using FastAPI or Django REST Framework 
+    JWT-based authentication for 3 roles: Customer, Technician, Admin 
+    PostgreSQL DB with: 
+        Users 
+        Technicians 
+        Services 
+        Bookings 
+    API endpoints for login, booking creation, updates, assignment, and status tracking 
+
+ 
+DevOps Setup 
+
+    Dockerize both backend and frontend 
+    Set up CI using Gitlab Actions 
+    Deploy the app to AWS ECS (Fargate) or Render (as a simpler option) 
+    Store secrets securely using .env or AWS SSM (if ECS) 
+
+ 
+Optional Enhancements (Stretch Goals) 
+
+    Email notifications on booking creation or status changes 
+    Add calendar view for technicians 
+    Start building a lightweight mobile version in React Native 
