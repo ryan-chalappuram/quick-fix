@@ -49,6 +49,9 @@ services:
     runtime: static
     buildCommand: cd frontend && npm ci && npm run build
     staticPublishPath: frontend/dist
+     envVars:                                                                                                                                                                        
+       - key: VITE_API_URL                                                                                                                                                           
+         value: ""        
     headers:
       - path: /*
         name: X-Frame-Options
